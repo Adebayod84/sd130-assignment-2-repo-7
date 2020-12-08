@@ -16,7 +16,7 @@ function scriptsTask() {
 }
 
 function stylesTask() {
-  return src('src/styles/**/*.css')
+  return src(['src/styles/**/*.css', 'src/styles-override.css'])
     .pipe(dest('dist/css'))
 }
 
